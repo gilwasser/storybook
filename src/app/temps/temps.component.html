@@ -1,0 +1,6 @@
+<div class="temps">
+    <div *ngFor="let temp of temps; index as i">
+        <p 
+            [style.font-size.em]="i < temps.length / 2 -2 || i > temps.length / 2 + 1? 1: i < temps.length / 2 -1 || i > temps.length / 2 ? 1.5: 2">{{temp}}</p>
+    </div>
+</div>

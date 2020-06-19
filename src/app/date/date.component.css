@@ -1,0 +1,14 @@
+.date{
+    padding: 0.5em;
+    text-align: center;
+}
+
+.city{
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.time{
+    letter-spacing: 0.2em;
+    margin: 0.5em;
+}
