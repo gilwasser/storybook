@@ -6,6 +6,7 @@ import { WeatherBoxComponent } from './weather-box.component';
 import { DateComponent } from '../date/date.component';
 import { TempsComponent } from '../temps/temps.component';
 
+
 import { cityData } from '../date/date.stories';
 import {tempsData} from '../temps/temps.stories';
 
@@ -23,15 +24,31 @@ export default {
 
 
 // default TaskList state
-export const Default = () => ({
+export const day = () => ({
   component: WeatherBoxComponent,
   template: `
-  <div style="padding: 3rem; ">
-    <app-weather-box [city]="city" [temps]="temps "></app-weather-box>
+  <div style="width:50%; margin: 1rem; width:fit-contet; font-size:12px">
+    <app-weather-box [date]="date" [theme]="theme" [city]="city" [temps]="temps "></app-weather-box>
   </div>
 `,
   props: {
-    city: cityData,
-    temps: tempsData
+    ...cityData,
+    date: new Date(),
+    temps: tempsData,
+    theme: "day"
+  },
+});
+
+export const night = () => ({
+  component: WeatherBoxComponent,
+  template: `
+  <div style="width:50%; margin: 1rem; width:fit-contet; font-size:12px">
+    <app-weather-box [theme]="theme" [date]="date" [city]="city" [temps]="temps "></app-weather-box>
+  </div>
+`,
+  props: {
+    ...cityData,
+    temps: tempsData,
+    theme: "night"
   },
 });

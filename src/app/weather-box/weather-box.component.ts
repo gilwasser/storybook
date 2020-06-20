@@ -6,9 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./weather-box.component.css']
 })
 export class WeatherBoxComponent implements OnInit {
-  @Input() city: 'stirng';
+  @Input() city: string;
+  @Input() date: Date;
+  @Input() theme: string;
   @Input() temps: number[];
-  constructor() { }
+  constructor() { 
+
+  }
+ 
 
   ngOnInit(): void {
   }

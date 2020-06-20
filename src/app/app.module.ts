@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { DateComponent } from './date/date.component';
 import { TempsComponent } from './temps/temps.component';
 import { WeatherBoxComponent } from './weather-box/weather-box.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { WeatherBoxComponent } from './weather-box/weather-box.component';
     WeatherBoxComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

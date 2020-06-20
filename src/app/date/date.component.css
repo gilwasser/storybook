@@ -4,11 +4,12 @@
 }
 
 .city{
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     margin: 0;
 }
 
 .time{
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     margin: 0.5em;
+    color: rgb(138, 138, 138);
 }

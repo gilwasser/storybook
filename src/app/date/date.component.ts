@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
-  date = new Date();
 
   @Input() city: string;
+  @Input() date: Date;
   constructor() { }
 
   ngOnInit(): void {
