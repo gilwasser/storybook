@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    font-size: 0.8em;
+}
+
+.votes{
+    margin-left: 0.3em;
+    color: rgb(100, 100, 100);
+}
+

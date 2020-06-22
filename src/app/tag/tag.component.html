@@ -1,0 +1,11 @@
+<div class="tag">
+    <div class="icon" *ngIf="icon">
+        <app-icon [iconStr]="icon"></app-icon>
+    </div>
+    <div *ngIf="icon">
+        <p class="with-icon">{{text}}</p>
+    </div>
+    <div *ngIf="!icon">
+        <p class="without-icon">{{text | uppercase}}</p>
+    </div>
+</div>

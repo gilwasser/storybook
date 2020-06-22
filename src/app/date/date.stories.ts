@@ -2,7 +2,7 @@
 
 import { DateComponent } from './date.component';
 import { moduleMetadata } from '@storybook/angular';
-import { CommonModule } from '@angular/common';
+import { DateModule } from './date.module';
 
 
 export default {
@@ -10,9 +10,7 @@ export default {
     excludeStories: /.*Data$/,
     decorators: [
       moduleMetadata({
-        // imports both components to allow component composition with storybook
-        declarations: [DateComponent],
-        imports: [CommonModule],
+        imports: [DateModule],
       }),
     ],
   };

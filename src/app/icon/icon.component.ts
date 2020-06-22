@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { faMap, IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faStar, faGem } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-icon',
@@ -10,6 +10,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 export class IconComponent implements OnInit {
   @Input() iconStr: string;
+  @Input() color: 'black';
   icon: IconDefinition;
   constructor() {
     this.icon = faChevronRight;
@@ -19,6 +20,8 @@ export class IconComponent implements OnInit {
     if (this.iconStr === 'map') this.icon = faMap;
     if (this.iconStr === 'leftArrow') this.icon = faChevronLeft;
     if (this.iconStr === 'rightArrow') this.icon = faChevronRight;
+    if (this.iconStr === 'star') this.icon = faStar;
+    if (this.iconStr === 'diamond') this.icon = faGem;
   }
 
 

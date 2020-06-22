@@ -2,9 +2,8 @@
 
 import { moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {IconModule} from './icon.module';
 import { IconComponent } from './icon.component';
-
 
 export default {
     title: 'Icon',
@@ -12,8 +11,7 @@ export default {
     decorators: [
       moduleMetadata({
         // imports both components to allow component composition with storybook
-        declarations: [IconComponent],
-        imports: [CommonModule,FontAwesomeModule],
+        imports: [IconModule]
       }),
     ],
   };
@@ -26,6 +24,7 @@ export const map = () => ({
     }
 });
 
+
 export const leftArrow = () => ({
     component: IconComponent,
     props: {
@@ -37,5 +36,6 @@ export const rightArrow = () => ({
     component: IconComponent,
     props: {
         iconStr: 'rightArrow',
+        color: 'pink'
     }
 });
