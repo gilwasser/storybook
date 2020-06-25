@@ -4,6 +4,8 @@ import { TagComponent } from './tag.component';
 import { moduleMetadata } from '@storybook/angular';
 
 import { TagModule } from './tag.module';
+import { select, text } from '@storybook/addon-knobs';
+import { IconName } from '../icon/iconType';
 
 
 export default {
@@ -20,16 +22,15 @@ export default {
 
 export const withIcon = () => ({
     component: TagComponent,
+    template: `
+    <div style="padding:5rem;display:flex; justify-content:space-evenly ;flex-wrap:wrap">
+        <app-tag [icon]="icon" [text]="text"></app-tag>
+        <app-tag [text]="text"></app-tag>
+    </div>
+  `,
     props: {
-        text: 'with icon',
-        icon: 'diamond'
+        text: text('text','text'),
+        icon: select('icon',IconName,IconName.star)
     }
 });
 
-
-export const withoutIcon = () => ({
-    component: TagComponent,
-    props: {
-        text: 'witout icon',
-    }
-});

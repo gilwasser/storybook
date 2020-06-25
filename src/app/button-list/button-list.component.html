@@ -1,0 +1,10 @@
+    <div class="without-icon list">
+        <div class="margin"  *ngFor="let button of withoutIcon">
+            <app-button (onClick)="onClick(button.text)"  [text]="button.text" [icon]="button.icon"></app-button>
+        </div>
+    </div>
+    <div class="with-icon list">
+        <div  *ngFor="let button of withIcon">
+            <app-button (onClick)="onClick(button.text)" [text]="button.text" [icon]="button.icon"></app-button>
+        </div>
+    </div>

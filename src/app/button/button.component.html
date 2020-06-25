@@ -1,4 +1,4 @@
-<button class="{{theme}}" (click)="buttonClicked()">
-    <div  *ngIf="icon" class="icon"><app-icon [iconStr]="icon"></app-icon></div>
-    <p>{{text}}</p>
+<button class="{{getClass()}}" (click)="buttonClicked()">
+    <span  *ngIf="icon" class="icon"><app-icon [icon]="icon" [color]="iconColor"></app-icon></span>
+    <span class="text">{{text}}</span>
 </button>

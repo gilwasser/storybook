@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IconComponent} from '../icon/icon.component';
+import { IconName, Colors } from '../icon/iconType';
 
 @Component({
   selector: 'app-stars',
@@ -7,6 +7,8 @@ import { IconComponent} from '../icon/icon.component';
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent implements OnInit {
+  icon : IconName = IconName.star;
+  iconColor : Colors = Colors.secondary;
   @Input() stars: number;
   @Input() votes: number;
   constructor() { }

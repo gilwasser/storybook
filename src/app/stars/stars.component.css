@@ -1,14 +1,16 @@
 div{
+    font-size: 16px;
     display: flex;
     align-items: center;
 }
 
 .icon{
-    font-size: 0.8em;
+    margin-bottom: 3px;
+    margin-right: 10px;
 }
 
 .votes{
-    margin-left: 0.3em;
+    margin-left: 5px;
     color: rgb(100, 100, 100);
 }
 

@@ -1,15 +1,20 @@
 .date{
-    padding: 0.5em;
+    padding: 8px;
     text-align: center;
 }
 
+
+
+
 .city{
-    letter-spacing: 0.1em;
+    font-size: large;
+    letter-spacing: 2px;
     margin: 0;
 }
 
 .time{
-    letter-spacing: 0.1em;
-    margin: 0.5em;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 8px;
     color: rgb(138, 138, 138);
 }

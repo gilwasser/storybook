@@ -1,8 +1,13 @@
 .weather-box{
     border-radius: 3px;
     box-shadow: -3px 9px 16px 3px rgba(0,0,0,0.31);
-    min-width: fit-content;
+    min-width: 20em;
+
 }
+:host{
+    font-size: 12px;
+}
+
 .day{
     color: #ee2400;
     background-color: #fef5d2;

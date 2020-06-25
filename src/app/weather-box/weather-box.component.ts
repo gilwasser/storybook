@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Theme } from './weather-box';
 
 @Component({
   selector: 'app-weather-box',
@@ -6,9 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./weather-box.component.css']
 })
 export class WeatherBoxComponent implements OnInit {
+  Theme = Theme;
   @Input() city: string;
   @Input() date: Date;
-  @Input() theme: string;
+  @Input() theme: Theme;
   @Input() temps: number[];
   constructor() { 
 
@@ -16,6 +18,7 @@ export class WeatherBoxComponent implements OnInit {
  
 
   ngOnInit(): void {
+    this.date
   }
 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IconName } from '@fortawesome/free-solid-svg-icons';
+import { Colors } from '../icon/iconType';
 
 @Component({
   selector: 'app-tag',
@@ -7,7 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TagComponent implements OnInit {
   @Input() text: string;
-  @Input() icon: string;
+  @Input() icon: IconName;
+  iconColor = Colors.primary;
   constructor() { }
 
   ngOnInit(): void {

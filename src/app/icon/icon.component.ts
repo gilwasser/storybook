@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { faMap, IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import { faChevronLeft, faChevronRight, faStar, faGem } from '@fortawesome/free-solid-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab} from '@fortawesome/free-brands-svg-icons'
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { IconName, Colors, } from './iconType';
 
 @Component({
   selector: 'app-icon',
@@ -9,20 +12,25 @@ import { faChevronLeft, faChevronRight, faStar, faGem } from '@fortawesome/free-
 })
 
 export class IconComponent implements OnInit {
-  @Input() iconStr: string;
-  @Input() color: 'black';
-  icon: IconDefinition;
-  constructor() {
-    this.icon = faChevronRight;
+  @Input() color = Colors;
+  @Input() icon : IconName;
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas, far,fab)
   }
 
   ngOnInit(): void {
-    if (this.iconStr === 'map') this.icon = faMap;
-    if (this.iconStr === 'leftArrow') this.icon = faChevronLeft;
-    if (this.iconStr === 'rightArrow') this.icon = faChevronRight;
-    if (this.iconStr === 'star') this.icon = faStar;
-    if (this.iconStr === 'diamond') this.icon = faGem;
   }
+
+  getIcon(): any[]{
+    let array = this.icon.split('-');
+    let res = []
+    res[0] = array[0];
+
+    res[1] = array.slice(1).join('-');
+    console.log(res);
+    return (res)
+  }
+
 
 
 }

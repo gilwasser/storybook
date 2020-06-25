@@ -1,7 +1,7 @@
-<div class="{{theme}} weather-box">
+<div class="{{theme===Theme.day? 'day': 'night'}} weather-box">
 
     <div class="icon">
-        <div *ngIf="theme === 'day'">
+        <div *ngIf="theme === Theme.day">
             <svg id="Layer_1" enable-background="new 0 0 510.355 510.355" height="100%" viewBox="0 0 510.355 510.355"
                 width="100%" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -31,7 +31,7 @@
                 </g>
             </svg>
         </div>
-        <div *ngIf="theme === 'night'">
+        <div *ngIf="theme === Theme.night">
             <svg id="Layer_1" enable-background="new 0 0 512 512" height="100%" viewBox="0 0 512 512" width="100%"
                 xmlns="http://www.w3.org/2000/svg">
                 <g>

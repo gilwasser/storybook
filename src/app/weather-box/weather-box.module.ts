@@ -7,7 +7,7 @@ import { DateModule } from '../date/date.module';
 
 
 @NgModule({
-  declarations: [WeatherBoxComponent],
+  declarations: [WeatherBoxComponent, ],
   imports: [
     CommonModule,
     TempsModule,
