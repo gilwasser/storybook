@@ -26,7 +26,7 @@ export const Date = () => ({
   //   </div>
   // `,
   props: {
-    page: number('page', 5),
+    page: number('page', 1),
     maxPage: number('maxPage', 10),
     onPageChange: action("click")
   }

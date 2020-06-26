@@ -1,4 +1,4 @@
-<button class="{{getClass()}}" (click)="buttonClicked()">
+<button class="{{getClass() }} {{active?'active': ''}}" (click)="buttonClicked()">
     <span  *ngIf="icon" class="icon"><app-icon [icon]="icon" [color]="iconColor"></app-icon></span>
     <span class="text">{{text}}</span>
 </button>

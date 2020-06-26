@@ -3,9 +3,9 @@
 
 
 export enum IconName {
-    star = "fas-star",
+    star = "far-star",
     map = "far-map",
-    heart = "fas-heart",
+    heart = "far-heart",
     facebook = 'fab-facebook',
     chevronLeft = 'fas-chevron-left',
     chevronRight = 'fas-chevron-right',
@@ -14,6 +14,8 @@ export enum IconName {
 
 export enum Colors {
     primary = "primary",
-    secondary = "secondary"
+    secondary = "secondary",
+    ternary = 'ternary',
+    gold = 'gold'
 }
 

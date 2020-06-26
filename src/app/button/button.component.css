@@ -8,17 +8,17 @@ button {
   outline: none;
   padding: 0;
   white-space: nowrap;
+  color: #393939;
 }
 
 .text-and-icon {
   border: 0;
-  border-radius: 6px;
   padding: 0 10px 0 10px;
   transition: 0.1s;
 }
 
 .text-and-icon:hover {
-  background-color: rgb(239, 239, 239);
+  color: #497497;
 }
 
 .text-and-icon .text {
@@ -28,13 +28,15 @@ button {
 
 .text-only {
   border: 1px solid rgb(199, 199, 199);
-  border-radius: 32px;
+  border-radius: 3px;
   padding: 0 1em;
-  transition: 0.1s;
+  transition: 0.15s;
 }
 
 .text-only:hover {
-  border-color: black;
+  transition: 0.15s;
+  color: #497497;
+  border-color: #497497;
 }
 
 
@@ -44,21 +46,18 @@ button {
 }
 
 .icon-only {
-  border-radius: 50%;
-  border: 1px solid rgb(199, 199, 199);
-  height: 40px;
-  width: 40px;
+  border-radius: 100%;
+  background-color: #497497;
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
   justify-content: center;
-  opacity: 0.6;
   transition: 0.15s;
 }
 
 .icon-only:hover {
-  border: rgba(0, 0, 0, 0.71);
   transition: 0.15s;
   border-radius: 50%;
-  border: 1px solid rgb(199, 199, 199);
-  opacity: 1;
   -webkit-box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.71);
   box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.71);
 
@@ -71,10 +70,9 @@ button {
 
 .num-only {
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.71);
-  opacity: 0.6;
 }
 
 .num-only .text {
@@ -84,8 +82,11 @@ button {
 }
 
 .num-only:hover {
-  opacity: 1;
   box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.71);
+}
+
+.active{
+  color: #497497;
 }
 
 

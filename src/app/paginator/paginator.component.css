@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  color: #393939;
+
 }
 
 a{
@@ -19,16 +21,16 @@ a{
 
 .link{
     cursor: pointer;
-    
+
 }
 
 .current-page{
-    background-color: black;
+    background-color: #497497;
     color: white;
     display: flex;
-    border: 1px solid black;
-    width: 40px;
-    height:40px;
+    border: 1px solid white;
+    width: 30px;
+    height:30px;
     border-radius: 100%;
     justify-content: center;
     align-items: center;

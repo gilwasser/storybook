@@ -9,9 +9,17 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .primary{
-    color: black
+    color: #393939
 }
 
 .secondary{
-    color: #ff385c;
+    color: #497497;
+}
+
+.ternary{
+  color: white;
+}
+
+.gold {
+  color: #b49d02;
 }

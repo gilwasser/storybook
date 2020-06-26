@@ -8,7 +8,7 @@ import { IconName, Colors } from '../icon/iconType';
 })
 export class StarsComponent implements OnInit {
   icon : IconName = IconName.star;
-  iconColor : Colors = Colors.secondary;
+  iconColor : Colors = Colors.gold;
   @Input() stars: number;
   @Input() votes: number;
   constructor() { }

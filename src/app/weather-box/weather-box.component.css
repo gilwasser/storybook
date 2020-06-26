@@ -9,13 +9,13 @@
 }
 
 .day{
-    color: #ee2400;
-    background-color: #fef5d2;
+    color: #b49d02;
+    background-color: #f3f1c3;
 }
 
 .night{
-    color: #585858;
-    background-color: #3c4149;
+    color: #263d4c;
+    background-color: #263d4c;
 }
 
 .temps {
@@ -25,7 +25,7 @@
 .icon {
     margin-left: auto;
     margin-right: auto;
-    width: 30%;    
+    width: 30%;
     padding: 2em 0;
 }
 
