@@ -1,0 +1,49 @@
+@import "../../styles";
+$margin: 20px;
+$padding: 10px;
+
+:host{
+}
+.menu{
+  margin: 0;
+  width: 12.5%;
+  min-width: 180px;
+  padding-top: $padding*2;
+}
+
+.tab{
+    border-left: 3px solid transparent;
+  padding: 2px $padding;
+  &:hover{
+    background: $hover;
+  }
+}
+
+.active{
+  background-color: $complementary;
+  border-left: 3px solid $secondary;
+  &:hover{
+    background: $complementary;
+  }
+}
+
+.image{
+  margin: 0 $margin  ;
+
+}
+
+.box{
+  margin-bottom: 50px;
+  p{
+    margin-left: $margin;
+  }
+}
+
+hr{
+  margin-left: $margin;
+  margin-bottom: 30px;
+  border: 0;
+    border-top: 1px solid $complementary;
+}
+
+

@@ -1,0 +1,20 @@
+<div class="menu">
+  <div class="image">
+    <app-profile-pic [imageURL]="user.url" [status]="status"></app-profile-pic>
+    <p class="name">{{user.name}}</p>
+  </div>
+
+  <hr>
+  <div *ngFor="let box of buttons, index as index" class="box">
+    <p>{{box.name | uppercase}}</p>
+    <div *ngFor="let button of box.buttons; index as i" class="tab  {{i === activeTab && index === activeBox? 'active':''}}">
+      <app-button
+        [active]="i === activeTab && index === activeBox"
+        [icon]="button.icon"
+        [text]="button.text"
+        (onClick)="onButtonClick(index,i)">
+      </app-button>
+    </div>
+  </div>
+
+</div>
