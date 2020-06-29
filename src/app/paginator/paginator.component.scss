@@ -1,0 +1,43 @@
+@import "../../styles";
+
+$radius: 30px;
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+
+}
+
+a {
+  margin: 15px;
+  font-size: $font-m;
+}
+
+.disabled {
+  cursor: default;
+}
+
+.link {
+  cursor: pointer;
+
+}
+
+.current-page {
+  background-color: $secondary;
+  color: $ternary;
+  display: flex;
+  border: 1px solid $ternary;
+  width: $radius;
+  height: $radius;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.15s;
+
+  &:hover{
+    transition: 0.15s;
+    -webkit-box-shadow: 0 3px 12px -3px $secondary;
+    box-shadow: 0 0 15px 2px $secondary;
+  }
+}

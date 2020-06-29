@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { PictureSliderComponent } from './picture-slider/picture-slider.component';
+import {IconModule} from "./icon/icon.module";
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { PictureSliderComponent } from './picture-slider/picture-slider.componen
     BrowserModule,
     BrowserAnimationsModule,
     CommonModule,
+    IconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

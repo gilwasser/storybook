@@ -1,13 +1,12 @@
+@import "../../styles";
+
 .date{
     padding: 8px;
     text-align: center;
 }
 
-
-
-
 .city{
-    font-size: large;
+    font-size: $font-xl;
     letter-spacing: 2px;
     margin: 0;
 }

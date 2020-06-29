@@ -1,19 +1,17 @@
-<div class="paginator">
-    <div *ngIf="page > 1">
-        <app-button [icon]="leftIcon" (onClick)="onPageClick(page-1)"></app-button>
-    </div>
-    <div *ngFor="let num of pages" class="link">
-        <div *ngIf="num != 0">
-            <a class="{{ num==page?'current-page': ''}}"
-                (click)="onPageClick(num)">{{num === 0 ? '...': num }}
-            </a>
-        </div>
-        <div *ngIf="num == 0">
-            <app-icon [icon]="dots"></app-icon>
-        </div>
-    </div>
-    <div *ngIf="page < maxPage">
-        <app-button [icon]="rightIcon" (onClick)="onPageClick(page+1)"></app-button>
-    </div>
-
+<div *ngIf="page > 1">
+  <app-button [icon]="leftIcon" (onClick)="onPageClick(page-1)"></app-button>
 </div>
+<div *ngFor="let num of pages" class="link">
+  <div *ngIf="num != 0">
+    <a class="{{ num==page?'current-page': ''}}"
+       (click)="onPageClick(num)">{{num === 0 ? '...' : num }}
+    </a>
+  </div>
+  <div *ngIf="num == 0">
+    <app-icon [icon]="dots"></app-icon>
+  </div>
+</div>
+<div *ngIf="page < maxPage">
+  <app-button [icon]="rightIcon" (onClick)="onPageClick(page+1)"></app-button>
+</div>
+

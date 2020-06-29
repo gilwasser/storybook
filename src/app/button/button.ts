@@ -6,3 +6,9 @@ export interface TextButton {
     icon?: IconName,
     onClick:FnParam
 }
+
+export interface TextIconButton {
+  text: string,
+  icon: IconName,
+  onClick?:FnParam
+}

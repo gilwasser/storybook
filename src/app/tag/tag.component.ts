@@ -5,7 +5,7 @@ import { Colors } from '../icon/iconType';
 @Component({
   selector: 'app-tag',
   templateUrl: './tag.component.html',
-  styleUrls: ['./tag.component.css']
+  styleUrls: ['./tag.component.scss']
 })
 export class TagComponent implements OnInit {
   @Input() text: string;

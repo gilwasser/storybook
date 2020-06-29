@@ -18,13 +18,8 @@ export default {
 
 export const tempsData = [22, 26, 28, 31, 25];
 
-export const Date = () => ({
+export const Paginator = () => ({
   component: PaginatorComponent,
-  // template: `
-  //   <div style="padding:20px; width: 80%;">
-  //       <app-paginator [page]="page" [maxPage]="maxPage" (onPageChange)="onPageChange()"></app-paginator>
-  //   </div>
-  // `,
   props: {
     page: number('page', 1),
     maxPage: number('maxPage', 10),

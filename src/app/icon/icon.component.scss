@@ -1,0 +1,50 @@
+@import "../../styles";
+
+$small: 12px;
+$medium: 16px;
+$large: 20px;
+$x-large: 24px;
+
+.small{
+  font-size: $small;
+}
+
+.medium{
+  font-size:$medium;
+}
+
+.large{
+  font-size: $large;
+}
+
+.x-large{
+  font-size: $x-large;
+}
+
+.primary{
+  color: $primary;
+}
+
+.secondary{
+  color: $secondary;
+}
+
+.ternary{
+  color: $ternary;
+}
+
+.gold{
+  color:$gold;
+}
+
+.success{
+  color: $success;
+}
+
+.danger{
+  color: $danger;
+}
+
+.disable{
+  color: $disable;
+}

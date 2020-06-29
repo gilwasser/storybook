@@ -20,13 +20,12 @@ export default {
 };
 
 
-export const withIcon = () => ({
+export const Button = () => ({
   component: ButtonComponent,
   props: {
     icon: select('icon', IconName, IconName.heart),
     text: text('text', 'Button'),
     onClick: action('click'),
     active: boolean('active',false)
-
   }
 });

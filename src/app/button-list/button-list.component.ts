@@ -4,7 +4,7 @@ import { TextButton } from '../button/button';
 @Component({
   selector: 'app-button-list',
   templateUrl: './button-list.component.html',
-  styleUrls: ['./button-list.component.css']
+  styleUrls: ['./button-list.component.scss']
 })
 export class ButtonListComponent implements OnInit, OnChanges {
 
@@ -13,7 +13,7 @@ export class ButtonListComponent implements OnInit, OnChanges {
   withoutIcon: TextButton[] = [];
 
   @Output() clicked : EventEmitter<string> = new EventEmitter();
-  constructor(private cd: ChangeDetectorRef) { 
+  constructor(private cd: ChangeDetectorRef) {
   }
   ngOnChanges(changes: SimpleChanges): void {
     if('buttons' in changes)
@@ -28,7 +28,7 @@ export class ButtonListComponent implements OnInit, OnChanges {
     let iconButtons: TextButton[] = [];
     let textButtons: TextButton[] = [];
     for(let button of this.buttons)
-    button.icon? iconButtons.push(button): textButtons.push(button); 
+    button.icon? iconButtons.push(button): textButtons.push(button);
 
     this.withIcon = iconButtons;
     this.withoutIcon = textButtons

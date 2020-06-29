@@ -20,7 +20,7 @@ export default {
 };
 
 
-export const withIcon = () => ({
+export const Tag = () => ({
     component: TagComponent,
     template: `
     <div style="padding:5rem;display:flex; justify-content:space-evenly ;flex-wrap:wrap">

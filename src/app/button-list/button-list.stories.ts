@@ -27,11 +27,11 @@ export const bottonsData = [
     {text:'Facebook', icon: IconName.facebook},
     {text: 'Circle of Life'},
     {text:'Heart', icon: IconName.heart},
-    
+
 ]
 
 
-export const withIcon = () => ({
+export const ButtonList = () => ({
     component: ButtonListComponent,
     template: `
         <div style="padding: 3em;width: 80%; margin:auto">

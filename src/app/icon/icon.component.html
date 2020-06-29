@@ -1,4 +1,4 @@
-<div class="{{color}}" *ngIf='icon'>
-    <fa-icon [icon]="getIcon()"></fa-icon>
+<div [ngClass]="getClass()" *ngIf='icon'>
+    <fa-icon [size]="size" [icon]="getIcon()"></fa-icon>
 </div>
 

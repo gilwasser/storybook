@@ -4,7 +4,7 @@ import { IconName, Colors } from '../icon/iconType';
 @Component({
   selector: 'app-stars',
   templateUrl: './stars.component.html',
-  styleUrls: ['./stars.component.css']
+  styleUrls: ['./stars.component.scss']
 })
 export class StarsComponent implements OnInit {
   icon : IconName = IconName.star;

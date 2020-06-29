@@ -17,7 +17,7 @@ export default {
 
 export const tempsData = [22, 26, 28, 31, 25];
 
-export const Date = () => ({
+export const Temps = () => ({
   component: TempsComponent,
   props: {
     temps: object('temps', (tempsData))

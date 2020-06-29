@@ -1,7 +1,10 @@
-div{
-    font-size: 16px;
+@import "../../styles";
+
+:host{
+    font-size: $font-l;
     display: flex;
     align-items: center;
+  color: $primary;
 }
 
 .icon{

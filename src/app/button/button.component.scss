@@ -1,0 +1,94 @@
+@import '../../styles.scss';
+
+button {
+  font-size: $font-m;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: none;
+  padding: 0;
+  white-space: nowrap;
+  color: $primary;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.text-and-icon{
+  border: 0;
+  padding: 0 10px 0 10px;
+  transition: 0.1s;
+
+  &:hover{
+    color: $secondary;
+  }
+
+  .text{
+    margin: 10px 0 10px 10px;
+  }
+}
+
+
+.text-only {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 3px;
+  padding: 0 1em;
+  transition: 0.15s;
+
+  &:hover{
+    transition: 0.15s;
+    color: $secondary;
+    border-color: $secondary;
+  }
+  .text{
+    margin: 0;
+    padding: 0.7em 0;
+  }
+}
+
+.icon-only {
+  color: white;
+  background-color: $secondary;
+  border-radius: 100%;
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  transition: 0.15s;
+  &:hover{
+    transition: 0.15s;
+    -webkit-box-shadow: 0 3px 12px -3px $secondary;
+    box-shadow: 0 0 15px 2px $secondary;
+  }
+
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.num-only {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+
+  .text{
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:hover{
+    box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.71);
+  }
+}
+
+.active{
+  color: $secondary;
+}
+
+
+
+

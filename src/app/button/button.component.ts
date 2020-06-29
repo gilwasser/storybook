@@ -5,7 +5,7 @@ import {Colors} from '../icon/iconType';
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
   @Input() text?: string;
@@ -27,11 +27,15 @@ export class ButtonComponent implements OnInit {
   }
 
   getClass():string{
-    if(this.icon && this.text) return'text-and-icon';
-    else if(this.text && isNaN(+this.text)) return'text-only';
-    else if(this.icon){
-      this.iconColor = Colors.ternary;
-      return 'icon-only';}
-    else  return'num-only';
+    let str:string;
+    if(this.icon && this.text) str = 'text-and-icon';
+    else if(!this.icon && this.text && isNaN(+this.text)) str = 'text-only'
+    else if( !this.text && this.icon) {
+      this.iconColor = Colors.complementary;
+      str = 'icon-only'
+    }
+    else str = 'num-only'
+    if(this.active) str += ' active';
+    return str
   }
 }

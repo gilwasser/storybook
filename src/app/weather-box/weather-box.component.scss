@@ -1,21 +1,22 @@
+@import "../../styles";
+:host{
+  font-size: $font-s;
+}
+
 .weather-box{
     border-radius: 3px;
     box-shadow: -3px 9px 16px 3px rgba(0,0,0,0.31);
     min-width: 20em;
-
-}
-:host{
-    font-size: 12px;
 }
 
 .day{
-    color: #b49d02;
-    background-color: #f3f1c3;
+    color: $gold;
+    background-color: #fffad0;
 }
 
 .night{
-    color: #263d4c;
-    background-color: #263d4c;
+    color: $secondary;
+    background-color: $secondary ;
 }
 
 .temps {

@@ -21,7 +21,7 @@ export default {
 };
 
 // default TaskList state
-export const day = () => ({
+export const WeatherBox = () => ({
   component: WeatherBoxComponent,
   template: `
   <div style="width:50%; margin: 1rem;">
