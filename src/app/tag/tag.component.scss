@@ -1,17 +1,35 @@
 @import "../../styles";
-
-:host {
+$small: 12px;
+$medium: 14px;
+$large: 16px;
+.tag {
   display: flex;
   align-items: center;
 
-  border: 1px solid rgb(201, 201, 201);
+  border: 1px solid $complementary;
   width: fit-content;
   border-radius: 3px;
-  height: 20px;
+  box-shadow: inset  1px 1px 1px 0px $complementary;
+}
+
+@mixin size($size){
+  font-size: $size;
+  height: $size*1.5;
+}
+.small{
+  @include size($small)
+
+}
+
+.medium{
+  @include size($medium)
+}
+
+.large{
+  @include size($large)
 }
 
 p {
-  font-size: $font-l;
   margin: 0;
 }
 
@@ -25,6 +43,7 @@ p {
 }
 
 .without-icon {
-  padding: 3px 7px;
+  padding: 3px 2px;
 
 }
+

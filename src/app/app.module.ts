@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { PictureSliderComponent } from './picture-slider/picture-slider.component';
 import {IconModule} from "./icon/icon.module";
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [

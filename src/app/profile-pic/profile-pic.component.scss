@@ -3,7 +3,7 @@ $small: 60px;
 $medium: 100px;
 $large: 150px;
 
-$shadow: 0px 1px 3px 0px $disable;
+$shadow: 1px 1px 3px 0px $disable;
 
 :host{
   display: inline-block;
@@ -11,13 +11,14 @@ $shadow: 0px 1px 3px 0px $disable;
 @mixin profile-size($length){
 
   .profile{
-    //border: 1px solid $ternary;
+    border: $length/40 solid $complementary;
     height: $length;
     width: $length ;
     border-radius: 100%;
     background-size: cover;
     background-position: center;
-    box-shadow: inset $shadow;
+    box-shadow: inset $shadow, $shadow;
+
   }
 
   .circle{
@@ -37,24 +38,24 @@ $shadow: 0px 1px 3px 0px $disable;
 
 @mixin icon-place($num){
   .circle{
-    top: $small / $num;
+    top: $num/20;
   }
 }
 
 .small{
   @include profile-size($small);
-  @include icon-place(25);
+  @include icon-place($small);
 }
 
 .medium{
   @include profile-size($medium);
-  @include icon-place(8);
+  @include icon-place($medium);
 
 }
 
 .large{
   @include profile-size($large);
-  @include icon-place(5);
+  @include icon-place($large);
 }
 
 .connect{

@@ -28,8 +28,13 @@ $padding: 10px;
 }
 
 .image{
-  margin: 0 $margin  ;
-
+  //display: flex;
+  margin: 0 0 0 $margin   ;
+  //justify-content: flex-start;
+  //align-items: flex-end;
+  p{
+    margin: 0;
+  }
 }
 
 .box{

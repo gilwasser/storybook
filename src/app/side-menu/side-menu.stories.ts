@@ -35,15 +35,6 @@ export const buttonsData = [{
       {text: 'Social', icon: IconName.social},
       {text: 'Forum', icon: IconName.forum},
     ]
-  },
-  {
-    name: 'education',
-    buttons: [
-      {text: 'Videos', icon: IconName.video},
-      {text: 'Games', icon: IconName.games},
-      {text: 'Social', icon: IconName.social},
-      {text: 'Forum', icon: IconName.forum},
-    ]
   }
 
 ]

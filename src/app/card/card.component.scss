@@ -1,0 +1,77 @@
+@import "../../styles.scss";
+
+
+:host{
+  font-size: $font-s;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+
+  //border: 1px solid $complementary;
+
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  //border: 1px solid $complementary;
+  border-top: 0;
+  margin: 0 0 1px 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.card{
+  border-top: 8px solid white;
+  border-radius: 3px;
+  background-color: $ternary;
+  box-shadow: 2px 2px 10px -5px $primary;
+  box-sizing: border-box;
+  height: 100%;
+
+}
+.text{
+  font-size: $font-s;
+  font-weight: bold;
+  word-wrap: normal;
+  padding: 0;
+}
+
+h1{
+  font-size: $font-l;
+  margin: 10px 0;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-top: 20px;
+  p{
+    margin-right: 10px;
+  }
+  color: $disable;
+}
+.tag{
+  white-space: nowrap;
+}
+
+.important{
+  border-top-color: $danger;
+}
+
+.secondary{
+  border-top-color: $secondary;
+}
+
+.urgent{
+  border-top-color: $success;
+}
+
+.negative{
+  border-top-color: $negative;
+}

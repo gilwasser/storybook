@@ -1,9 +1,12 @@
-    <div class="icon" *ngIf="icon">
-        <app-icon [icon]="icon"></app-icon>
-    </div>
-    <div *ngIf="icon">
-        <p class="with-icon">{{text}}</p>
-    </div>
-    <div *ngIf="!icon">
-        <p class="without-icon">{{text | uppercase}}</p>
-    </div>
+<div class="tag {{size}}">
+  <div class="icon " *ngIf="icon">
+    <app-icon [size]="size" [icon]="icon"></app-icon>
+  </div>
+  <div *ngIf="icon">
+    <p class="with-icon">{{text}}</p>
+  </div>
+  <div *ngIf="!icon">
+    <p class="without-icon">{{text | uppercase}}</p>
+  </div>
+</div>
+

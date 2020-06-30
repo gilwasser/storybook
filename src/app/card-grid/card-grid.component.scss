@@ -1,0 +1,35 @@
+$width: 95%;
+
+.cards-grid {
+  display: grid;
+  grid-gap:  30px 30px;
+  //grid-template-rows: max-content;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .cards-grid {
+    grid-template-columns: $width/3 $width/3 $width/3;
+
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .cards-grid {
+    grid-template-columns: $width/2 $width/2;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .cards-grid {
+    grid-template-columns: minmax(min-content,100%);
+  }
+}
+
+
+
+
+
