@@ -1,28 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$primary: #393939;
-$secondary: #497497;
-$ternary: white;
-$gold: #f68700;
-$success: #6BD425;
-$danger: #FF3A20;
-$complementary: #E6E6E6;
-$disable: #8d8d8d;
-$hover: #f8f8f8;
-$negative: #ff0099;
+@import './themes';
+@include angular-material-theme($theme);
 
-$font-s: 12px;
-$font-m: 14px;
-$font-l: 16px;
-$font-xl: 20px;
+$primary: #2d2d2d;
+$secondary: #e7e7e7;
+$accent: #0089ce;
 
-body {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-size: $font-m;
-  color: $primary;
+*{
+  font-size: 16px;
 }
-
-//html, body { height: 100%; }
-//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

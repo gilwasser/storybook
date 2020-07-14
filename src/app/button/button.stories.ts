@@ -1,31 +1,33 @@
-import {moduleMetadata} from '@storybook/angular';
-
-import {ButtonModule} from './button.module';
-import {ButtonComponent} from './button.component';
-import {IconName} from '../icon/iconType';
-import {withKnobs, text, select, boolean} from '@storybook/addon-knobs';
-import {action} from "@storybook/addon-actions";
+import { moduleMetadata } from '@storybook/angular';
+import {ButtonComponent} from "./button.component";
+import {ButtonModule} from "./button.module";
+import {select, text} from "@storybook/addon-knobs";
+import {ButtonColor, ButtonSize} from "./button.enum";
 
 
 export default {
-  title: 'ButtonComponnet',
+  title: 'Button',
   excludeStories: /.*Data$/,
-  declarations: [withKnobs],
   decorators: [
     moduleMetadata({
       // imports both components to allow component composition with storybook
+      declarations: [],
       imports: [ButtonModule],
     }),
   ],
 };
 
-
-export const Button = () => ({
+// default TaskList state
+export const Default = () => ({
   component: ButtonComponent,
+  template: `
+  <div style="padding: 3rem">
+    <app-button text="text" [size]="size" [color]="color"></app-button>
+  </div>
+`,
   props: {
-    icon: select('icon', IconName, IconName.heart),
-    text: text('text', 'Button'),
-    onClick: action('click'),
-    active: boolean('active',false)
-  }
+    text: text('text','button'),
+    color: select('color',ButtonColor, ButtonColor.accent),
+    size: select('size',ButtonSize, ButtonSize.medium)
+  },
 });

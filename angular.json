@@ -126,7 +126,7 @@
   "defaultProject": "my-new-storybook",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "styleExt": "scss"
     }
   }
 }
