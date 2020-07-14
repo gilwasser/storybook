@@ -2,13 +2,19 @@
 @import "../../styles";
 
 button{
+  display: flex;
+
+
   background: none;
   border: 0;
-  border-radius: 4px;
-  padding: 4px 8px;
+  border-radius: 2px;
+  padding: 2px 8px;
   outline: none;
 
   font-size: inherit;
+
+
+  align-items: center;
   &:hover{
     background-color: $secondary;
     color: black;
@@ -18,7 +24,11 @@ button{
     background-color: transparent;
   }
 }
-
+.icon{
+  button{
+    padding-left: 4px;
+  }
+}
 .primary{
   button{
     background-color: $primary;

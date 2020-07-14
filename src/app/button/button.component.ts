@@ -7,6 +7,7 @@ import {ButtonColor, ButtonSize} from "./button.enum";
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent implements OnInit {
+  @Input() icon?;
   @Input() text: string;
   @Input() color: ButtonColor = ButtonColor.none;
   @Input() size: ButtonSize = ButtonSize.medium;

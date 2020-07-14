@@ -3,6 +3,7 @@ import {ButtonComponent} from "./button.component";
 import {ButtonModule} from "./button.module";
 import {select, text} from "@storybook/addon-knobs";
 import {ButtonColor, ButtonSize} from "./button.enum";
+import {IconName} from "../icon/icon.enum";
 
 
 export default {
@@ -22,12 +23,15 @@ export const Default = () => ({
   component: ButtonComponent,
   template: `
   <div style="padding: 3rem">
-    <app-button text="text" [size]="size" [color]="color"></app-button>
+    <app-button [text]="text" [size]="size" [color]="color" [icon]="icon"></app-button>
+    <div style="height:50px"></div>
+    <app-button [text]="text" [size]="size" [color]="color" ></app-button>
   </div>
 `,
   props: {
     text: text('text','button'),
     color: select('color',ButtonColor, ButtonColor.accent),
-    size: select('size',ButtonSize, ButtonSize.medium)
+    size: select('size',ButtonSize, ButtonSize.medium),
+    icon: select('icon',IconName,IconName.menu)
   },
 });

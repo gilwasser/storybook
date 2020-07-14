@@ -1,5 +1,6 @@
-<div [ngClass]="[color, size]">
-  <button>{{text}}</button>
+<div [ngClass]="[color, size, icon?'icon':'']">
+
+  <button><app-icon *ngIf="icon" [icon]="icon" [size]="size"></app-icon>{{text}}</button>
 </div>
 
 
