@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from "@angular/material/icon";
 import {IconModule} from "./icon/icon.module";
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,6 @@ import {IconModule} from "./icon/icon.module";
     BrowserModule,
     BrowserAnimationsModule,
     CommonModule,
-    IconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

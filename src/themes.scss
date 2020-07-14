@@ -14,7 +14,8 @@ $theme: mat-light-theme( $app-primary, $app-accent);
 
 
 $green-primary: mat-palette($mat-light-green, A400);
-$green-accent: mat-palette($mat-gray,800);
-$green-theme: mat-light-theme( $green-primary, $green-accent);
+$green-accent: mat-palette($mat-orange,400);
+$green-warn: mat-palette($mat-red,400);
+$green-theme: mat-light-theme( $green-primary, $green-accent,$green-warn);
 @include angular-material-theme($green-theme);
 

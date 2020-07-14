@@ -1,0 +1,13 @@
+@import "../../themes";
+
+.dark {
+  @include angular-material-theme($green-theme);
+}
+
+
+.stars{
+  color: #ff8400;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}

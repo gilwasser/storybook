@@ -1,0 +1,15 @@
+@import "../../themes";
+
+.box{
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  @include angular-material-theme($green-theme);
+  h1{
+    position: absolute;
+
+    width: 100%;
+    top: 10px;
+    text-align: center;
+  }
+}
